@@ -1,3 +1,3 @@
 lua << EOF
-require('balance')
+require('balance').setup{}
 EOF
