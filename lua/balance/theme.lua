@@ -33,7 +33,7 @@ theme.setup = function(options)
   highlightfunc('IncSearch', color.black, color.yellow, attr.none, nil)
   highlightfunc('Substitute', nil, color.skyblue, attr.none, nil)
   highlightfunc('LineNr', color.darkgrey, nil , nil, nil)
-  highlightfunc('CursorLineNr', color.brown, color.white, nil, nil)
+  highlightfunc('CursorLineNr', color.tan, color.white, nil, nil)
   highlightfunc('MatchParen', nil, color.lightgrey, nil, nil)
   highlightfunc('ModeMsg', color.green, nil, nil, nil)
   highlightfunc('MoreMsg', color.green, nil, nil, nil)
@@ -160,7 +160,8 @@ theme.setup = function(options)
   linkfunc('shQuote', 'String')
   linkfunc('vimScriptDelim', 'Macro')
   linkfunc('StringDelimiter', 'String')
-  linkfunc('CompeDocumentation', 'NormalFloat')
+
+  utils.load_theme(options)
 end
 
 return theme
