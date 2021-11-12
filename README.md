@@ -12,6 +12,10 @@ use 'MetriC-DT/balance-theme.nvim'
 ```
 
 And somewhere in your `init.vim`:
-```
+```vim
 colorscheme balance
+```
+Alternatively, in lua:
+```lua
+require'balance'.setup()
 ```
