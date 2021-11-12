@@ -17,12 +17,10 @@ theme.setup = function(options)
   highlightfunc('Directory', color.darkblue, nil, nil, nil)
 
   -- Diff
-  highlightfunc('DiffAdded', color.green, nil, attr.bold, nil)
-  highlightfunc('DiffRemoved', color.darkred, nil, attr.bold, nil)
-  highlightfunc('DiffAdd', color.green, nil, nil, nil)
-  highlightfunc('DiffChange', color.blue, nil, nil, nil)
-  highlightfunc('DiffDelete', color.darkred, nil, nil, nil)
-  highlightfunc('DiffText', color.purpleblue, nil, nil, nil)
+  highlightfunc('DiffAdd', color.green, attr.none, attr.none, nil)
+  highlightfunc('DiffChange', color.blue, attr.none, attr.none, nil)
+  highlightfunc('DiffDelete', color.darkred, attr.none, attr.none, nil)
+  highlightfunc('DiffText', color.purpleblue, attr.none, attr.none, nil)
 
   highlightfunc('EndOfBuffer', color.black, nil, nil, nil)
   highlightfunc('ErrorMsg', color.darkred, attr.none, nil, nil)
