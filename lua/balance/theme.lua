@@ -18,8 +18,10 @@ theme.setup = function(options)
 
   -- Diff
   highlightfunc('DiffAdd', color.green, attr.none, attr.none, nil)
+  highlightfunc('DiffAdded', color.green, attr.none, attr.none, nil)
   highlightfunc('DiffChange', color.blue, attr.none, attr.none, nil)
   highlightfunc('DiffDelete', color.darkred, attr.none, attr.none, nil)
+  highlightfunc('DiffRemoved', color.darkred, attr.none, attr.none, nil)
   highlightfunc('DiffText', color.purpleblue, attr.none, attr.none, nil)
 
   highlightfunc('EndOfBuffer', color.black, nil, nil, nil)
