@@ -135,26 +135,31 @@ theme.setup = function(options)
   highlightfunc('Error', color.red, color.white, attr.bold, nil)
   highlightfunc('Todo', color.green, color.white, attr.bold, nil)
 
-  -- from help: lsp-highlight
-  highlightfunc('LspDiagnosticDefaultError', color.red, nil, nil, nil)
-  highlightfunc('LspDiagnosticDefaultWarning', color.orange, nil, nil, nil)
-  highlightfunc('LspDiagnosticDefaultInformation', color.darkblue, nil, nil, nil)
-  highlightfunc('LspDiagnosticDefaultHint', color.purpleblue, nil, nil, nil)
+  -- from help: diagnostic-highlights
+  highlightfunc('DiagnosticError', color.red, nil, nil, nil)
+  highlightfunc('DiagnosticWarn', color.orange, nil, nil, nil)
+  highlightfunc('DiagnosticInfo', color.darkblue, nil, nil, nil)
+  highlightfunc('DiagnosticHint', color.purpleblue, nil, nil, nil)
 
-  highlightfunc('LspDiagnosticVirtualTextError', color.red, nil, nil, nil)
-  highlightfunc('LspDiagnosticVirtualTextWarning', color.orange, nil, nil, nil)
-  highlightfunc('LspDiagnosticVirtualTextInformation', color.darkblue, nil, nil, nil)
-  highlightfunc('LspDiagnosticVirtualTextHint', color.purpleblue, nil, nil, nil)
+  highlightfunc('DiagnosticVirtualTextError', color.red, nil, nil, nil)
+  highlightfunc('DiagnosticVirtualTextWarn', color.orange, nil, nil, nil)
+  highlightfunc('DiagnosticVirtualTextInfo', color.darkblue, nil, nil, nil)
+  highlightfunc('DiagnosticVirtualTextHint', color.purpleblue, nil, nil, nil)
 
-  highlightfunc('LspDiagnosticSignError', color.darkred, nil, nil, nil)
-  highlightfunc('LspDiagnosticSignWarning', color.orange, nil, nil, nil)
-  highlightfunc('LspDiagnosticSignInformation', color.purpleblue, nil, nil, nil)
-  highlightfunc('LspDiagnosticSignHint', color.blue, nil, nil, nil)
+  highlightfunc('DiagnosticSignError', color.darkred, nil, nil, nil)
+  highlightfunc('DiagnosticSignWarn', color.orange, nil, nil, nil)
+  highlightfunc('DiagnosticSignInfo', color.purpleblue, nil, nil, nil)
+  highlightfunc('DiagnosticSignHint', color.blue, nil, nil, nil)
 
-  highlightfunc('LspDiagnosticUnderlineError', nil, nil, attr.undercurl, color.red)
-  highlightfunc('LspDiagnosticUnderlineWarning', nil, nil, attr.undercurl, color.orange)
-  highlightfunc('LspDiagnosticUnderlineInformation', nil, nil, attr.undercurl, color.darkblue)
-  highlightfunc('LspDiagnosticUnderlineHint', nil, nil, attr.undercurl, color.purpleblue)
+  highlightfunc('DiagnosticUnderlineError', nil, nil, attr.undercurl, color.red)
+  highlightfunc('DiagnosticUnderlineWarn', nil, nil, attr.undercurl, color.orange)
+  highlightfunc('DiagnosticUnderlineInfo', nil, nil, attr.undercurl, color.darkblue)
+  highlightfunc('DiagnosticUnderlineHint', nil, nil, attr.undercurl, color.purpleblue)
+
+  highlightfunc('DiagnosticFloatingError', color.darkred, nil, nil, nil)
+  highlightfunc('DiagnosticFloatingWarn', color.orange, nil, nil, nil)
+  highlightfunc('DiagnosticFloatingInfo', color.purpleblue, nil, nil, nil)
+  highlightfunc('DiagnosticFloatingHint', color.blue, nil, nil, nil)
 
   -- other links
   linkfunc('shQuote', 'String')
