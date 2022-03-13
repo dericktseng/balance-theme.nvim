@@ -3,7 +3,7 @@ local attr = {
   bold      = 'bold',
   italic    = 'italic',
   underline = 'underline',
-  undercurl = 'underline',
+  undercurl = 'undercurl',
   none      = 'none'
 }
 
