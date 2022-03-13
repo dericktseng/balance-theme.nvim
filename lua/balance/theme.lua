@@ -50,7 +50,7 @@ theme.setup = function(options)
 
   -- cmp custom highlights
   highlightfunc('CmpItemAbbr', color.black, nil, nil, nil)
-  highlightfunc('CmpItemAbbrDeprecated', color.darkred, nil, nil, nil)
+  highlightfunc('CmpItemAbbrDeprecated', color.lightgrey, nil, nil, nil)
   highlightfunc('CmpItemAbbrMatch', color.blue, nil, attr.bold, nil)
   highlightfunc('CmpItemAbbrMatchFuzzy', color.blue, nil, attr.underline, nil)
   highlightfunc('CmpItemKind', color.purpleblue, nil, nil, nil)
