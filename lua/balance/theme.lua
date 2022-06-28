@@ -1,6 +1,4 @@
-local attr = require('balance.attr')
 local utils = require('balance.utils')
-local color = require('balance.colors')
 
 local highlightfunc = utils.highlightfunc
 local linkfunc = utils.linkfunc
@@ -8,6 +6,11 @@ local linkfunc = utils.linkfunc
 local theme = {}
 
 theme.setup = function(options)
+
+  -- load the colors and attributes from the options
+  local color = options.color
+  local attr = options.attr
+
   -- builtin highlight groups according to help: highlight-groups
   highlightfunc('ColorColumn', nil, color.lightgrey, nil, nil)
   highlightfunc('Conceal', color.purpleblue, attr.none, nil, nil)
@@ -61,10 +64,10 @@ theme.setup = function(options)
   highlightfunc('SpecialKey', color.green, nil, nil, nil)
 
   -- SpellCheck colors
-  highlightfunc('SpellBad', nil, nil, attr.undercurl, color.red)
-  highlightfunc('SpellLocal', nil, nil, attr.undercurl, color.turquoise)
-  highlightfunc('SpellCap', nil, nil, attr.undercurl, color.blue)
-  highlightfunc('SpellRare', nil, nil, attr.undercurl, color.teal)
+  highlightfunc('SpellBad', color.red, nil, attr.undercurl, attr.none)
+  highlightfunc('SpellLocal', color.turquoise, nil, attr.undercurl, attr.none)
+  highlightfunc('SpellCap', color.blue, nil, attr.undercurl, attr.none)
+  highlightfunc('SpellRare', color.teal, nil, attr.undercurl, attr.none)
 
   -- StatusLine
   highlightfunc('StatusLine', color.blue, color.offwhite, nil, nil)
@@ -151,10 +154,10 @@ theme.setup = function(options)
   highlightfunc('DiagnosticSignInfo', color.purpleblue, nil, nil, nil)
   highlightfunc('DiagnosticSignHint', color.blue, nil, nil, nil)
 
-  highlightfunc('DiagnosticUnderlineError', nil, nil, attr.undercurl, color.red)
-  highlightfunc('DiagnosticUnderlineWarn', nil, nil, attr.undercurl, color.orange)
-  highlightfunc('DiagnosticUnderlineInfo', nil, nil, attr.undercurl, color.darkblue)
-  highlightfunc('DiagnosticUnderlineHint', nil, nil, attr.undercurl, color.purpleblue)
+  highlightfunc('DiagnosticUnderlineError', color.red, nil, attr.undercurl, attr.none)
+  highlightfunc('DiagnosticUnderlineWarn', color.orange, nil, attr.undercurl, attr.none)
+  highlightfunc('DiagnosticUnderlineInfo', color.darkblue, nil, attr.undercurl, attr.none)
+  highlightfunc('DiagnosticUnderlineHint', color.purpleblue, nil, attr.undercurl, attr.none)
 
   highlightfunc('DiagnosticFloatingError', color.darkred, nil, nil, nil)
   highlightfunc('DiagnosticFloatingWarn', color.orange, nil, nil, nil)
