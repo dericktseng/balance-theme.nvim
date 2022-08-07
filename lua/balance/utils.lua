@@ -4,12 +4,11 @@ local utils = {}
 local cmdbuf = {}
 
 -- highlighting function. AT LEAST ONE OF fg, bg, attr, attrsp MUST NOT BE NIL
-utils.highlightfunc = function(group, fg, bg, attr, attrsp)
+utils.highlightfunc = function(group, fg, bg, attr)
   table.insert(cmdbuf, 'highlight ' .. group)
   table.insert(cmdbuf, fg and ' guifg=' .. fg or '')
   table.insert(cmdbuf, bg and ' guibg=' .. bg or '')
   table.insert(cmdbuf, attr and ' gui=' .. attr or '')
-  table.insert(cmdbuf, attrsp and ' guisp=' .. attrsp or '')
   table.insert(cmdbuf, '\n')
 end
 
