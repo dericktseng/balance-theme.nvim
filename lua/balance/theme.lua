@@ -39,19 +39,19 @@ theme.setup = function(options)
   highlightfunc('MoreMsg', color.green, nil, nil, nil)
   highlightfunc('NonText', color.grey, nil, attr.none, nil)
   highlightfunc('Normal', color.black, nil , nil, nil)
-  highlightfunc('NormalFloat', nil, color.lighttan, nil, nil)
+  highlightfunc('NormalFloat', nil, color.white, nil, nil)
   highlightfunc('NormalNC', nil, attr.none, nil, nil)
 
   -- PMenu
-  highlightfunc('Pmenu', nil, color.lighttan, nil, nil)
-  highlightfunc('PmenuSel', color.lighttan, color.darkgrey, nil, nil)
+  highlightfunc('Pmenu', nil, color.white, nil, nil)
+  highlightfunc('PmenuSel', nil, color.lightgrey, nil, nil)
   highlightfunc('PmenuSbar', nil, color.lightgrey, nil, nil)
   highlightfunc('PmenuThumb', nil, color.darkblue, nil, nil)
 
   -- cmp custom highlights
   highlightfunc('CmpItemAbbr', color.black, nil, nil, nil)
-  highlightfunc('CmpItemAbbrDeprecated', color.darkred, nil, nil, nil)
-  highlightfunc('CmpItemAbbrMatch', color.blue, nil, attr.bold, nil)
+  highlightfunc('CmpItemAbbrDeprecated', color.darkred, nil, attr.strikethrough, color.darkred)
+  highlightfunc('CmpItemAbbrMatch', color.blue, nil, nil, nil)
   highlightfunc('CmpItemAbbrMatchFuzzy', color.blue, nil, attr.underline, nil)
   highlightfunc('CmpItemKind', color.purpleblue, nil, nil, nil)
   highlightfunc('CmpItemMenu', color.darkgrey, nil, nil, nil)
@@ -141,25 +141,10 @@ theme.setup = function(options)
   highlightfunc('DiagnosticInfo', color.darkblue, nil, nil, nil)
   highlightfunc('DiagnosticHint', color.purpleblue, nil, nil, nil)
 
-  highlightfunc('DiagnosticVirtualTextError', color.red, nil, nil, nil)
-  highlightfunc('DiagnosticVirtualTextWarn', color.orange, nil, nil, nil)
-  highlightfunc('DiagnosticVirtualTextInfo', color.darkblue, nil, nil, nil)
-  highlightfunc('DiagnosticVirtualTextHint', color.purpleblue, nil, nil, nil)
-
-  highlightfunc('DiagnosticSignError', color.darkred, nil, nil, nil)
-  highlightfunc('DiagnosticSignWarn', color.orange, nil, nil, nil)
-  highlightfunc('DiagnosticSignInfo', color.purpleblue, nil, nil, nil)
-  highlightfunc('DiagnosticSignHint', color.blue, nil, nil, nil)
-
   highlightfunc('DiagnosticUnderlineError', nil, nil, attr.undercurl, color.red)
   highlightfunc('DiagnosticUnderlineWarn', nil, nil, attr.undercurl, color.orange)
   highlightfunc('DiagnosticUnderlineInfo', nil, nil, attr.undercurl, color.darkblue)
   highlightfunc('DiagnosticUnderlineHint', nil, nil, attr.undercurl, color.purpleblue)
-
-  highlightfunc('DiagnosticFloatingError', color.darkred, nil, nil, nil)
-  highlightfunc('DiagnosticFloatingWarn', color.orange, nil, nil, nil)
-  highlightfunc('DiagnosticFloatingInfo', color.purpleblue, nil, nil, nil)
-  highlightfunc('DiagnosticFloatingHint', color.blue, nil, nil, nil)
 
   -- other links
   linkfunc('shQuote', 'String')

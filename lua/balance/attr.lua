@@ -4,6 +4,7 @@ local attr = {
   italic    = 'italic',
   underline = 'underline',
   undercurl = 'undercurl',
+  strikethrough = 'strikethrough',
   none      = 'none'
 }
 
