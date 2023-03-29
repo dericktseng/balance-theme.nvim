@@ -19,12 +19,12 @@ local color = {
   darkblue   = '#004987',
   blue       = '#0787a9',
   purpleblue = '#4078f2',
-  skyblue    = '#adf1f1',
   lightblue  = '#bedaf8',
 
   indigo     = '#2e00c9',
   purple     = '#a300f4',
 
+  purewhite  = '#ffffff',
   white      = '#efefef',
   offwhite   = '#dedede',
   lightgrey  = '#d3d3d3',
