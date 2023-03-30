@@ -38,7 +38,7 @@ theme.setup = function(options)
   highlightfunc('ModeMsg', color.green, nil, nil, nil)
   highlightfunc('MoreMsg', color.green, nil, nil, nil)
   highlightfunc('NonText', color.grey, nil, attr.none, nil)
-  highlightfunc('Normal', nil, color.purewhite, nil, nil)
+  highlightfunc('Normal', color.black, color.purewhite, nil, nil)
   highlightfunc('NormalFloat', nil, attr.none, nil, nil)
   highlightfunc('NormalNC', nil, attr.none, nil, nil)
 
