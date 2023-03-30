@@ -43,7 +43,7 @@ theme.setup = function(options)
   highlightfunc('NormalNC', nil, attr.none, nil, nil)
 
   -- PMenu
-  highlightfunc('Pmenu', nil, attr.none, nil, nil)
+  highlightfunc('Pmenu', nil, color.faintblue, nil, nil)
   highlightfunc('PmenuSel', nil, color.lightblue, nil, nil)
   highlightfunc('PmenuSbar', nil, color.lightgrey, nil, nil)
   highlightfunc('PmenuThumb', nil, color.blue, nil, nil)
@@ -73,7 +73,7 @@ theme.setup = function(options)
   -- Tabline
   highlightfunc('TabLine', color.darkgrey, attr.none, attr.none, nil)
   highlightfunc('TabLineFill', attr.none, attr.none, attr.none, nil)
-  highlightfunc('TabLineSel', color.purpleblue, attr.none, attr.bold, nil)
+  highlightfunc('TabLineSel', color.purpleblue, color.faintblue, attr.bold, nil)
 
   highlightfunc('Title', color.purpleblue, nil, nil, nil)
   highlightfunc('Visual', color.black, color.lightblue, nil, nil)
