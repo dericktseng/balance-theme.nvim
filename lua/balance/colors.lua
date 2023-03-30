@@ -20,7 +20,7 @@ local color = {
   blue       = '#0787a9',
   purpleblue = '#4078f2',
   lightblue  = '#bedaf8',
-  faintblue  = '#f1ffff',
+  faintblue  = '#f9f9f9',
 
   indigo     = '#2e00c9',
   purple     = '#a300f4',

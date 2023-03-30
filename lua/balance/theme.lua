@@ -71,9 +71,9 @@ theme.setup = function(options)
   highlightfunc('StatusLineNC', color.black, color.offwhite, nil, nil)
 
   -- Tabline
-  highlightfunc('TabLine', color.darkgrey, attr.none, attr.none, nil)
-  highlightfunc('TabLineFill', attr.none, attr.none, attr.none, nil)
-  highlightfunc('TabLineSel', color.purpleblue, color.faintblue, attr.bold, nil)
+  highlightfunc('TabLine', color.darkgrey, color.faintblue, attr.none, nil)
+  highlightfunc('TabLineFill', attr.none, color.faintblue, attr.none, nil)
+  highlightfunc('TabLineSel', color.purpleblue, color.purewhite, attr.bold, nil)
 
   highlightfunc('Title', color.purpleblue, nil, nil, nil)
   highlightfunc('Visual', color.black, color.lightblue, nil, nil)
