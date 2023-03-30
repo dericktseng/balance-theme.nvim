@@ -38,13 +38,13 @@ theme.setup = function(options)
   highlightfunc('ModeMsg', color.green, nil, nil, nil)
   highlightfunc('MoreMsg', color.green, nil, nil, nil)
   highlightfunc('NonText', color.grey, nil, attr.none, nil)
-  highlightfunc('Normal', color.black, color.purewhite, nil, nil)
-  highlightfunc('NormalFloat', nil, color.white, nil, nil)
+  highlightfunc('Normal', nil, color.purewhite, nil, nil)
+  highlightfunc('NormalFloat', nil, attr.none, nil, nil)
   highlightfunc('NormalNC', nil, attr.none, nil, nil)
 
   -- PMenu
-  highlightfunc('Pmenu', nil, color.white, nil, nil)
-  highlightfunc('PmenuSel', nil, color.lightgrey, nil, nil)
+  highlightfunc('Pmenu', nil, attr.none, nil, nil)
+  highlightfunc('PmenuSel', nil, color.lightblue, nil, nil)
   highlightfunc('PmenuSbar', nil, color.lightgrey, nil, nil)
   highlightfunc('PmenuThumb', nil, color.blue, nil, nil)
 
@@ -73,7 +73,7 @@ theme.setup = function(options)
   -- Tabline
   highlightfunc('TabLine', color.darkgrey, attr.none, attr.none, nil)
   highlightfunc('TabLineFill', attr.none, attr.none, attr.none, nil)
-  highlightfunc('TabLineSel', color.darkblue, color.lighttan, attr.none, nil)
+  highlightfunc('TabLineSel', color.purpleblue, attr.none, attr.bold, nil)
 
   highlightfunc('Title', color.purpleblue, nil, nil, nil)
   highlightfunc('Visual', color.black, color.lightblue, nil, nil)
