@@ -146,6 +146,9 @@ theme.setup = function(options)
   highlightfunc('DiagnosticUnderlineInfo', nil, nil, attr.undercurl, color.darkblue)
   highlightfunc('DiagnosticUnderlineHint', nil, nil, attr.undercurl, color.purpleblue)
 
+  -- Treesitter colors
+  highlightfunc('TreesitterContextLineNumber', nil, color.lightblue, nil, nil);
+
   -- other links
   linkfunc('shQuote', 'String')
   linkfunc('vimScriptDelim', 'Macro')
