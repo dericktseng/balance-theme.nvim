@@ -39,7 +39,7 @@ theme.setup = function(options)
   highlightfunc('MoreMsg', color.green, nil, nil, nil)
   highlightfunc('NonText', color.grey, nil, attr.none, nil)
   highlightfunc('Normal', color.black, color.purewhite, nil, nil)
-  highlightfunc('NormalFloat', nil, attr.none, nil, nil)
+  highlightfunc('NormalFloat', nil, color.white, nil, nil)
   highlightfunc('NormalNC', nil, attr.none, nil, nil)
 
   -- PMenu
