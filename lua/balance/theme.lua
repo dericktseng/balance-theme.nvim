@@ -121,8 +121,8 @@ theme.setup = function(options)
 
   highlightfunc('Type', color.magenta, nil, attr.none, nil)
   highlightfunc('StorageClass', color.darkblue, nil, nil, nil)
-  highlightfunc('Structure', color.darkblue, nil, attr.bold, nil)
-  highlightfunc('Typedef', color.indigo, nil, attr.bold, nil)
+  highlightfunc('Structure', color.magenta, nil, attr.none, nil)
+  highlightfunc('Typedef', color.indigo, nil, attr.none, nil)
 
   highlightfunc('Special', color.darkblue, nil, nil, nil)
   highlightfunc('SpecialChar', color.darkgrey, nil, nil, nil)
