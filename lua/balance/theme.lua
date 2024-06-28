@@ -12,6 +12,7 @@ theme.setup = function(options)
   highlightfunc('ColorColumn', nil, color.lightgrey, nil, nil)
   highlightfunc('Conceal', color.purpleblue, attr.none, nil, nil)
   highlightfunc('Cursor', color.white, color.black, nil, nil)
+  highlightfunc('CurSearch', color.black, color.yellow, attr.none, nil)
   highlightfunc('CursorColumn', nil, color.darkgrey, nil, nil)
   highlightfunc('CursorLine', nil, color.faintblue, attr.none, nil)
   highlightfunc('Directory', color.darkblue, nil, nil, nil)
@@ -44,7 +45,9 @@ theme.setup = function(options)
 
   -- PMenu
   highlightfunc('Pmenu', nil, color.white, nil, nil)
-  highlightfunc('PmenuSel', nil, color.lightblue, nil, nil)
+  highlightfunc('PmenuSel', color.black, color.lightblue, nil, nil)
+  highlightfunc('PmenuKindSel', nil, color.lightblue, nil, nil)
+  highlightfunc('PmenuKindSel', nil, color.lightblue, nil, nil)
   highlightfunc('PmenuSbar', nil, color.lightgrey, nil, nil)
   highlightfunc('PmenuThumb', nil, color.blue, nil, nil)
 
