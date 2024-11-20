@@ -129,7 +129,7 @@ theme.setup = function(options)
 
   highlightfunc('Special', color.darkblue, nil, nil, nil)
   highlightfunc('SpecialChar', color.darkgrey, nil, nil, nil)
-  highlightfunc('Tag', nil, color.lighttan, nil, nil)
+  highlightfunc('Tag', color.magenta, nil, nil, nil)
   highlightfunc('Delimiter', color.black, nil, nil, nil)
   highlightfunc('SpecialComment', color.blue, nil, nil, nil)
   highlightfunc('Debug', color.darkred, nil, nil, nil)
